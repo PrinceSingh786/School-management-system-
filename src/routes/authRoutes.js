@@ -12,6 +12,7 @@ router.get("/profile", authMiddleware(), (req, res) => {
   res.json({ message: "Profile accessed", user: req.user });
 });
 
+
 router.get(
   "/admin-only",
   authMiddleware(["admin", "superadmin"]),
