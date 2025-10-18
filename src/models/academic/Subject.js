@@ -13,6 +13,11 @@ const SubjectSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    grade:{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "ClassGrade",
+      index: true,
+    },
     code: {
       type: String, // e.g., MATH, ENG
       trim: true,
