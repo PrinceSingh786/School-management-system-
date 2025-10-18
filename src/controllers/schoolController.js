@@ -16,7 +16,7 @@ exports.createSchool = async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 };
-
+``
 // Get one school by id
 exports.getSchoolById = async (req, res) => {
   try {

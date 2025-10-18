@@ -17,6 +17,15 @@ app.use("/auth", authRoutes);
 const schoolRoutes = require("./routes/schoolRoutes");
 app.use("/schools", schoolRoutes);
 
+const classRoutes = require("./routes/classRoutes");
+app.use("/classes", classRoutes);
+
+const sectionRoutes = require("./routes/sectionRoutes");
+app.use("/sections", sectionRoutes);
+
+const subjectRoutes = require("./routes/subjectRoutes");
+app.use("/subjects", subjectRoutes);
+
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
